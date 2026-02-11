@@ -60,6 +60,7 @@ To build a machine learning model that accurately predicts the sale price of hou
 - Selected the best-performing model based on RMSE
 
 # Project Structure
+  
    House-Price-Prediction/
 │
 ├── data/
