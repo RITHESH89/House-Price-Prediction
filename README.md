@@ -59,6 +59,18 @@ To build a machine learning model that accurately predicts the sale price of hou
 - Compared model performance on validation data
 - Selected the best-performing model based on RMSE
 
+# Project Structure
+   House-Price-Prediction/
+│
+├── data/
+│   ├── train.csv
+│   └── test.csv
+│
+├── house_price.py
+├── README.md
+└── requirements.txt
+
+
 # Results
 
 - XGBoost regression achieved the best performance
