@@ -64,12 +64,17 @@ To build a machine learning model that accurately predicts the sale price of hou
    House-Price-Prediction/
 │
 ├── data/
-│   ├── train.csv
-│   └── test.csv
+│   └── train.csv
 │
-├── house_price.py
-├── README.md
-└── requirements.txt
+├── src/
+│   ├── preprocessing.py
+│   └── train_model.py
+│
+├── model/
+│   └── model.pkl
+│
+├── requirements.txt
+└── README.md
 
 
 # Results
