@@ -79,6 +79,11 @@ To build a machine learning model that accurately predicts the sale price of hou
 
 # Results
 
-- XGBoost regression achieved the best performance
-- Feature engineering significantly improved prediction accuracy
-- Log transformation of the target variable reduced prediction error
+-## 📊 Results
+
+Model: XGBoost Regressor  
+Evaluation Metric: RMSE  
+
+The XGBoost model significantly improved prediction accuracy
+compared to baseline models due to boosting and log transformation.
+
