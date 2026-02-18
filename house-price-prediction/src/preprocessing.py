@@ -1,1 +1,20 @@
-{"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"authorship_tag":"ABX9TyM572PrZoF0pIo6NuqA21kg"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"code","execution_count":1,"metadata":{"id":"30SHKCLKSBQS","executionInfo":{"status":"ok","timestamp":1771343269138,"user_tz":-330,"elapsed":390,"user":{"displayName":"Nithesh Halady","userId":"09363104636407214290"}}},"outputs":[],"source":["import pandas as pd"]},{"cell_type":"code","source":["def preprocess_data(path):\n","    df = pd.read_csv(path)\n","\n","    # Handle missing values\n","    df.fillna(df.median(numeric_only=True), inplace=True)\n","    df.fillna(\"None\", inplace=True)\n","\n","    # Convert categorical to numerical\n","    df = pd.get_dummies(df, drop_first=True)\n","\n","    X = df.drop(\"SalePrice\", axis=1)\n","    y = df[\"SalePrice\"]\n","\n","    return X, y"],"metadata":{"id":"RDdv3NktSSYU","executionInfo":{"status":"ok","timestamp":1771343346922,"user_tz":-330,"elapsed":17,"user":{"displayName":"Nithesh Halady","userId":"09363104636407214290"}}},"execution_count":2,"outputs":[]}]}
+import pandas as pd
+import numpy as np
+
+def preprocess_data(path):
+    df = pd.read_csv(path)
+
+    # Log transform target (important for skewed prices)
+    y = np.log1p(df["SalePrice"])
+
+    # Drop target from dataframe
+    df = df.drop("SalePrice", axis=1)
+
+    # Fill missing values
+    df.fillna(df.median(numeric_only=True), inplace=True)
+    df.fillna("None", inplace=True)
+
+    # Convert categorical features
+    df = pd.get_dummies(df, drop_first=True)
+
+    return df, y
