@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Example values (replace with your test data if available)
+y_test = np.array([200000, 150000, 300000, 250000, 180000])
+y_pred = np.array([210000, 145000, 290000, 260000, 175000])
+
+plt.figure(figsize=(6,6))
+plt.scatter(y_test, y_pred)
+plt.plot([y_test.min(), y_test.max()],
+         [y_test.min(), y_test.max()])
+
+plt.xlabel("Actual Prices")
+plt.ylabel("Predicted Prices")
+plt.title("Actual vs Predicted House Prices")
+
+# SAVE IMAGE
+plt.savefig("images/actual_vs_predicted.png")
+plt.show()
