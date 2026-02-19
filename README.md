@@ -76,10 +76,19 @@ To build a machine learning model that accurately predicts the sale price of hou
 ├── requirements.txt
 └── README.md
 
+## Models Trained
+
+| Model | RMSE |
+|------|------|
+| Linear Regression | 0.18 |
+| Random Forest Regressor | 0.14 |
+| XGBoost Regressor | 0.12 |
+
+## 🏆 Best Model
+XGBoost Regressor performed the best with the lowest RMSE.
+
 
 # Results
-
--## 📊 Results
 
 Model: XGBoost Regressor  
 Evaluation Metric: RMSE  
