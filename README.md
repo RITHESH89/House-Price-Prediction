@@ -87,6 +87,14 @@ To build a machine learning model that accurately predicts the sale price of hou
 ## 🏆 Best Model
 XGBoost Regressor performed the best with the lowest RMSE.
 
+##  Visual Results
+
+### Actual vs Predicted Prices
+![Actual vs Predicted](images/actual_vs_predicted.png)
+
+### Feature Importance
+![Feature Importance](images/feature_importance.png)
+
 
 # Results
 
