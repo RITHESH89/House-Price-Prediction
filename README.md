@@ -65,7 +65,9 @@ To build a machine learning model that accurately predicts the sale price of hou
 │
 ├── data/
 │   └── train.csv
-│
+│   └── test.csv
+├── notebooks
+     └── House-Price-Prediction.ipynb
 ├── src/
 │   ├── preprocessing.py
 │   └── train_model.py
@@ -84,19 +86,10 @@ To build a machine learning model that accurately predicts the sale price of hou
 | Random Forest Regressor | 0.14 |
 | XGBoost Regressor | 0.12 |
 
-## 🏆 Best Model
+##  Best Model
 XGBoost Regressor performed the best with the lowest RMSE.
 
-##  Visual Results
-
-### Actual vs Predicted Prices
-![Actual vs Predicted](images/actual_vs_predicted.png)
-
-### Feature Importance
-![Feature Importance](images/feature_importance.png)
-
-
-# Results
+## Results
 
 Model: XGBoost Regressor  
 Evaluation Metric: RMSE  
