@@ -1,6 +1,6 @@
 ## House-Price-Prediction
 
-# Project Overview
+## Project Overview
 
 The Ames Housing dataset, compiled by Dean De Cock, is a comprehensive and modernized alternative to the Boston Housing dataset. It contains detailed information about residential properties, including structural features, quality ratings, and location-based attributes.
 
