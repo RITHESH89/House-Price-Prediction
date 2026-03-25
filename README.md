@@ -23,7 +23,7 @@ To build a machine learning model that accurately predicts the sale price of hou
 # Technologies & Libraries Used
 
 - Programming Language: Python
-- Libraries:
+  Libraries:
   - NumPy
   - Pandas
   - Matplotlib
