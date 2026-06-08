@@ -1,1 +1,1 @@
-the dataset has many future
+the dataset has many future like location, number of rooms, area
